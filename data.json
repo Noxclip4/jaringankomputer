@@ -1,0 +1,82 @@
+{
+    "tasks": [
+        {
+            "title": "Desain jaringan Kabel dan Nirkabel",
+            "description": "Membuat desain jaringan.",
+            "popupDescription": "Deskripsi Tugas: <br>- Lihat Gambar 12 pada Buku Bahan Ajar <br>- Gunakan aplikasi Diagram https://app.diagrams.net/ <br>- Buat Diagram dan link file diagram dipastekan di bagian ini!",
+            "link": "https://drive.google.com/file/d/1G74qjferxktm_UEjyUFmZch2V0Rch-hG/view?usp=sharing"
+        },
+        {
+            "title": "Buat Resume Media Transmisi Jaringan",
+            "description": "Resume Media Transmisi Jaringan",
+            "popupDescription": "Deskripsi Tugas: <br>- Setelah mempelajari dan mengikuti perkuliahan media transmisi jaringan <br>- Buat resume sesuai yang anda pahami <br>- Diketik dengan Google Doc sesuai format tata tulis ilmiah <br>- Copy link file dari google drive /blog Anda (pastikan link terbuka) Pastekan di bagian ini",
+            "link": "https://docs.google.com/document/d/1tV4uotnnrK8FxxAw_yf7vG7hDHHHUzr8JsbR-AUMJlc/edit?usp=sharing"
+        },
+        {
+            "title": "Buat Diagram Struktur dan Topologi Jaringan",
+            "description": "Struktur Diagram dan Topologi Jaringan.",
+            "popupDescription": "Deskripsi tugas: <br>- Gunakan Aplikasi Diagram <br>- Buat gambar struktur dan topologi jaringan yang ada di Bahan Ajar bab 2 <br>- Mulai gambar 9 s.d. gambar 22 <br>- Setiap gambar satu halaman <br>- File disimpan di Google Drive Anda <br>- Link file ditempelkan di bagian ini!",
+            "link": "https://drive.google.com/file/d/12ftfOLstYpkW2fjW-8fk5OnUu1k_soJ0/view?usp=sharing"
+        },
+        {
+            "title": "Resume Materi OSI",
+            "description": "Resume Materi OSI",
+            "popupDescription": "Deskripsi tugas: <br>- Pelajari materi di atas tentang OSI <br>- Buat resumenya sesuai pemahaman Anda <br>- Diketik menggunakan Google Doc <br>- Link share file dipastekan di sini",
+            "link": "https://docs.google.com/document/d/1xvbHj8p_BXFJanbd3qToAJZvZb3AxwUs2Jz82VgcsX0/edit?usp=sharing"
+        },
+        {
+            "title": "Buat Presentasi TCP/IP",
+            "description": "Buat presentasi.",
+            "popupDescription": "Deskripsi tugas: <br>- Diskusikan Dalam kelompok <br>Dari Buku Prasimax: TCP/IP Buat file Presentasinya: <br>- Kelompok 1: Bab 2 <br>- Kelompok 2: Bab 3 <br>- Kelompok 3: Bab 4 dan Bab 5 <br>- Kelompok 4: Bab 6 <br>- Kelompok 5: Bab 7 <br>- Kelompok 6: Bab 8 <br>- Kelompok 7: Bab 9 dan Bab 10 <br>- Kelompok 8: Bab 11 dan Bab 12 <br>Upload file presentasi kelompok Anda di Google Drive <br>Link file dipastekan di sini <br>Presentasikan pada pertemuan berikutnya!",
+            "link": "https://www.canva.com/design/DAGTjJXMePw/cmMclmP9vMDGsaUNuTuX2A/edit?utm_content=DAGTjJXMePw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        },
+        {
+            "title": "Tugas Membuat Presentasi (Kelompok)",
+            "description": "Presentasi.",
+            "popupDescription": "Deskripsi tugas: <br>- Pelajari teori tentang IP versi 6 <br>Buat presentasi per kelompok <br>Link file presentasi ditempel di sini!",
+            "link": "https://www.canva.com/design/DAGVIgQpAMk/MQnysC1nS86-M4kXEXwtlA/edit?utm_content=DAGVIgQpAMk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        },
+        {
+            "title": "Resume dan Diagram Routing",
+            "description": "Resume dan Diagram",
+            "popupDescription": "Deskripsi tugas: <br>- Pelajari materi di atas <br>- Buat resume tentang routing <br>- Buat diagram model routing interkoneksi minimal 3 router (gunakan app diagram) <br>- Link file ditempel di bagian ini!",
+            "link": "https://drive.google.com/drive/folders/1fsVOA0jsrWFfu5BwO7W1wAo_x-Uh7DaA"
+        },
+        {
+            "title": "Pendalaman Materi tentang Routing Dynamic",
+            "description": "Pembahasan dan Presentasi Routing Dynamic.",
+            "popupDescription": "Deskripsi tugas: <br>- Cari referensi yang lengkap dan buat pembahasan tentang Dynamic Routing! <br>- EGP: <br>- Kelompok 1: BGP <br>- Kelompok 2: BGP <br>IGP: <br>- Kelompok 3: RIP <br>- Kelompok 4: IGRP <br>- Kelompok 5: OSPF <br>- Kelompok 6: OSPF <br>- Kelompok 7: EIGRP <br>- Kelompok 8: EIGRP <br>- Buat pembahasan dan presentasinya <br>- File pembahasan dan presentasi simpan di folder <br>- Link Folder Kelompok Anda ditempelkan di bagian ini!",
+            "link": "https://drive.google.com/drive/folders/1Lj-NOFkDBfe1wRWBEO_G98TI21MXqoir?usp=sharing"
+        },
+        {
+            "title": "Perancangan Topologi Routing Dinamis",
+            "description": "Perancangan Topologi",
+            "popupDescription": "Deskripsi tugas: <br>- Gunakan Aplikasi Diagram Jaringan seperti https://app.diagrams.net/ <br>- Berikan contoh diagram routing dinamis setiap jenisnya <br>- Berikan keterangan dan penjelasan secukupnya pada setiap gambar <br>- Link file gambar diagram Anda ditempelkan di bagian ini!",
+            "link": "https://drive.google.com/file/d/1HktZIjQ8JrLCLuORPZfbEMZOyQDvMLbo/view?usp=sharing"
+        },
+        {
+            "title": "Perancangan Arsitektur Jaringan Client-Server",
+            "description": "Perancangan Arsitektur",
+            "popupDescription": "Deskripsi tugas: <br>- Pelajari materi di atas <br>- Buat Arsitektur Jaringan Client-Server (konsep Client-Server, one-Tier, Two Tier, Three Tier, dan Multitier) <br>- Gunakan Aplikasi Diagram <br>- Link file ditempelkan di bagian ini!",
+            "link": "https://drive.google.com/file/d/16OeCsr-nId0m5eCfG72YIQYyBCjAMn5T/view?usp=sharing"
+        },
+        {
+            "title": "Buat Tabel Daftar DNS | URL dan IP",
+            "description": "Tabel Daftar DNS, URL, dan IP",
+            "popupDescription": "Deskripsi tugas: <br>- Pelajari materi di atas <br>- Buat Daftar URL dan IP untuk beberapa jenis DNS <br>- Gunakan Spreadsheet <br>- Adapun jenis domain yang dibuat adalah: <br>- .com => 3 URL <br>- .net => 3 URL <br>- .or.id => 3 URL <br>- .ac.id => 10 URL <br>- .sch.id => 10 URL <br>- .go.id => 3 URL <br>- .co.id => 3 URL <br>- Link file Anda ditempelkan di bagian ini!",
+            "link": "https://docs.google.com/spreadsheets/d/1I_6Vwc97vBHxnON6MSLGiDSM_eNTa214fd_RRCj5ezw/edit?usp=sharing"
+        },
+        {
+            "title": "Resume Quality of Service",
+            "description": "Resume dan Perhitungan QoS.",
+            "popupDescription": "Deskripsi tugas: <br>- Buat resume tentang Quality of Service (QoS) <br>- Buat contoh perhitungan tentang parameter QoS: Throughput, Packet Loss, Delay, Jitter <br>- Buat di Google Doc <br>- Link file ditempelkan di bagian ini!",
+            "link": "https://docs.google.com/document/d/1PYb7QXT_KcU74QZ3LWXsP0G71uI7c5XW/edit?usp=sharing&ouid=108176367108098785448&rtpof=true&sd=true"
+        },
+        {
+            "title": "Proyek Akhir Kuliah Jaringan",
+            "description": "Proyek Akhir",
+            "popupDescription": "Deskripsi tugas: <br>- Buat Video Presentasi Kelompok Tentang Materi/Tema: <br>- Kelompok 1 dan 2: Jaringan Server & Data Center <br>- Kelompok 3 dan 4: Protocol Protocol Jaringan dalam Layer Aplikasi <br>- Kelompok 5 dan 6: DNS dan DNS Server <br>- Kelompok 7 dan 8: Manajemen Bandwidth <br>- Upload Video di YouTube <br>- Masing-masing membuat Laman Web Blog dengan Tema Ilmu Komputer <br>- Sematkan/Embedkan Video Kelompok Anda di Web Blog Masing-masing <br>- Tambahkan Postingan semua tugas-tugas kuliah Anda <br>- Setiap kelompok menuliskan link anggota kelompoknya di bagian ini!",
+            "link": ""
+        }
+    ]
+}

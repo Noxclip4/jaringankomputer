@@ -1,0 +1,948 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #007bff, #0088ff);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.8s ease-out;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    white-space: nowrap; /* Mencegah teks terpotong */
+}
+
+.header-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.header-nav a:hover {
+    background: white;
+    color: #007bff;
+}
+
+.header-nav a.active {
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 4px solid #ffffff;
+}
+
+.header-nav a:hover {
+    color: #0056b3;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .header-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        padding-top: 0.5rem;
+    }
+
+    .header-nav a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem;
+    }
+
+    .header-title {
+        font-size: 1.2rem;
+    }
+
+    .header-nav {
+        gap: 0.3rem;
+    }
+
+    .header-nav a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+/* Grid Layout */
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    box-sizing: border-box; /* Pastikan padding dihitung */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 0.5s; /* Adjust delay as needed */
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.card:nth-child(5) {
+    animation-delay: 0.9s;
+}
+
+.card:nth-child(6) {
+    animation-delay: 1.0s;
+}
+
+.card:nth-child(7) {
+    animation-delay: 1.1s;
+}
+
+.card:nth-child(8) {
+    animation-delay: 1.2s;
+}
+
+.card:nth-child(9) {
+    animation-delay: 1.3s;
+}
+
+.card:nth-child(10) {
+    animation-delay: 1.4s;
+}
+
+.card:nth-child(11) {
+    animation-delay: 1.5s;
+}
+
+.card:nth-child(12) {
+    animation-delay: 1.6s;
+}
+
+.card:nth-child(13) {
+    animation-delay: 1.7s;
+}
+
+.card:nth-child(14) {
+    animation-delay: 1.8s;
+}
+
+.card:nth-child(15) {
+    animation-delay: 1.9s;
+}
+
+.card:nth-child(16) {
+    animation-delay: 2.0s;
+}
+
+.card:nth-child(17) {
+    animation-delay: 2.1s;
+}
+
+.card:nth-child(18) {
+    animation-delay: 2.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left; /* Rata kiri */
+    overflow: hidden; /* Sembunyikan teks berlebih */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2; /* Batasi maksimal 2 baris */
+    -webkit-box-orient: vertical;
+    height: 55px; /* Tetapkan tinggi tetap untuk konsistensi */
+}
+
+/* Description Styling */
+.card-description {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left; /* Rata kiri */
+    margin-bottom: auto;
+    flex-grow: 1; /* Ambil ruang kosong yang tersisa */
+    overflow: hidden; /* Sembunyikan teks berlebih */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 3; /* Batasi maksimal 3 baris */
+    -webkit-box-orient: vertical;
+    height: 60px; /* Tetapkan tinggi tetap untuk konsistensi */
+}
+
+/* Button Styling */
+.card-btn {
+    background: linear-gradient(120deg, #007bff, #0088ff);
+    color: white;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center; /* Posisi tombol di tengah horizontal */
+    margin-top: auto; /* Tambahkan ruang otomatis dari elemen di atas */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card-btn:hover {
+    background: linear-gradient(120deg, #0088ff, #007bff);
+    transform: scale(1.05);
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Proporsi card */
+    gap: 1.5rem; /* Jarak antar card */
+    justify-content: center; /* Menempatkan grid di tengah */
+    align-items: stretch; /* Menyamakan tinggi semua elemen */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Satu kolom untuk layar sedang */
+        gap: 1rem;
+    }
+
+    .card {
+        height: auto; /* Sesuaikan tinggi dengan konten */
+        width: 100%; /* Lebar penuh */
+        max-width: 400px; /* Batasi lebar maksimal */
+        margin: auto; /* Pusatkan setiap card */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* Tetap satu kolom untuk layar kecil */
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1rem; /* Padding lebih kecil */
+        height: auto; /* Sesuaikan tinggi dengan konten */
+        width: 100%; /* Lebar penuh */
+        max-width: 400px; /* Batasi lebar maksimal */
+        margin: auto; /* Pusatkan setiap card */
+    }
+
+    .card-btn {
+        font-size: 0.8rem; /* Ukuran tombol lebih kecil */
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .video-container {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .footer {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container {
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Video Section */
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.video-container iframe {
+    
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.video-description {
+    flex: 1;
+    text-align: left;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya Default Tombol */
+.youtube-button {
+    display: inline-block;
+    margin-top: 1rem;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.youtube-button:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    transform: scale(1.1); /* Membesarkan tombol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-wrapper {
+        flex-direction: column;
+    }
+    .video-description {
+        text-align: left;
+    }
+}
+
+/* Animasi fade-in */
+/* Animasi Fade-In */
+.video-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+/* Section Heading */
+.section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    animation: fadeInUp 1s ease; /* Animasi masuk */
+}
+
+.section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    animation: fadeInUp 1s ease; /* Animasi masuk */
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+    animation: slideIn 1s ease;
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+    animation: slideIn 1s ease;
+}
+
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60px;
+    }
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-btn {
+    background: linear-gradient(120deg, #007bff, #0088ff);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card-btn:hover {
+    background: linear-gradient(120deg, #0088ff, #007bff);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #007bff, #0088ff);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Default padding */
+}
+
+/* Bagian Kiri */
+.footer-left {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Bagian Tengah */
+.footer-center {
+    text-align: center;
+}
+
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+}
+
+/* Bagian Navigasi */
+.footer-navigation {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-navigation a:hover {
+    color: #ffd700;
+}
+
+/* Bagian Kanan */
+/* Gaya Default */
+.footer-right a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.footer-right a:hover {
+    color: #ff0000; /* Warna merah khas YouTube */
+    transform: scale(1.1); /* Memperbesar sedikit */
+    text-shadow: 0 2px 5px rgba(255, 0, 0, 0.6); /* Menambahkan efek bayangan */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 2rem; /* Tambah padding untuk menghindari mepet */
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Susunan vertikal untuk elemen dalam popup */
+    gap: 1.5rem; /* Tambahkan jarak antar elemen */
+}
+
+.popup-close {
+    position: absolute;
+    top: 15px; /* Berikan lebih banyak ruang dari atas */
+    right: 20px; /* Berikan lebih banyak ruang dari kanan */
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Jarak antar section */
+.section {
+    margin: 6rem 0; /* Menambahkan margin antar section */
+}
+
+/* Popup Description with Scroll */
+#popup-description {
+    max-height: 200px; /* Batas tinggi deskripsi */
+    overflow-y: auto; /* Scroll jika konten terlalu panjang */
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Scrollbar Customization */
+#popup-description::-webkit-scrollbar {
+    width: 6px;
+}
+
+#popup-description::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 10px;
+}
+
+#popup-description::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+/* Popup Link Button */
+/* Popup Link Button */
+#popup-link {
+    display: inline-block;
+    background: linear-gradient(120deg, #007bff, #0088ff);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    width: auto; /* Tombol menyesuaikan lebar teks */
+    min-width: unset; /* Hapus pengaturan lebar minimum */
+    text-align: center;
+    margin: 0 auto; /* Posisikan tombol di tengah */
+}
+
+#popup-link:hover {
+    background: linear-gradient(120deg, #0088ff, #007bff);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Tombol untuk Tugas */
+.task-btn {
+    background: linear-gradient(120deg, #007bff, #0088ff);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-btn:hover {
+    background: linear-gradient(120deg, #0088ff, #007bff);
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol untuk Anggota */
+.member-btn {
+    background: linear-gradient(120deg,  #0088ff, #007bff);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-btn:hover {
+    background: linear-gradient(120deg,  #0088ff, #007bff);
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup About Me */
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff; /* Border biru untuk estetika */
+}
+
+.about-description {
+    background: #f9f9f9;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 0 auto; /* Memastikan berada di tengah */
+    display: inline-block;
+}
+
+.about-description p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    display: flex;
+    justify-content: left; /* Membuat konten rata tengah */
+}
+
+.about-description strong {
+    color: #007bff; 
+    margin-right: 0.5rem; 
+}
+
+.anggota-link {
+    display: inline-block;
+    background: linear-gradient(120deg, #007bff, #0088ff);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: auto; /* Pastikan tombol berada di bawah */
+}
+
+.anggota-link:hover {
+    background: linear-gradient(120deg, #0088ff, #007bff);
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Container */
+.anggota-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grid responsif */
+    gap: 1.5rem; /* Jarak antar item */
+    padding: 1rem;
+}
+
+/* Grid Item */
+.anggota-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Posisikan elemen dengan jarak */
+    align-items: center; /* Pusatkan konten secara horizontal */
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Pastikan semua item grid memiliki tinggi sama */
+}
+
+.anggota-grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Foto Profil */
+.anggota-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Nama dan Peran */
+.anggota-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.anggota-role {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: center;
+}
